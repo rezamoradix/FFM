@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<ArrayOfRadioCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RadioCommand>
+    <Name>ExtAudio-Sub-Mux[mkv]</Name>
+    <OutExt>.mkv</OutExt>
+    <Command> -c:a copy -c:v copy -c:s copy -disposition:s:0 default</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>autoMP3[mp3]</Name>
+    <OutExt>.mp3</OutExt>
+    <Command> -vn -ac 2 -c:a libmp3lame</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>128K-MP3[mp3]</Name>
+    <OutExt>.mp3</OutExt>
+    <Command> -vn -ac 2 -c:a libmp3lame -b:a 128k</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>toCRF30[mp4]</Name>
+    <OutExt>.mp4</OutExt>
+    <Command> -c:a aac -c:v libx264 -crf 30</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>x265[mkv]</Name>
+    <OutExt>.mkv</OutExt>
+    <Command> -c:a aac -c:v libx265 -c:s copy</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>toCRF30-x265[mkv]</Name>
+    <OutExt>.mkv</OutExt>
+    <Command> -c:a aac -c:v libx265 -c:s copy -crf 30</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>480p[mkv]</Name>
+    <OutExt>.mkv</OutExt>
+    <Command> -c:a aac -c:v libx264 -c:s copy -vf scale=-2:480</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>480p(x265)[mkv]</Name>
+    <OutExt>.mkv</OutExt>
+    <Command> -c:a aac -c:v libx265 -c:s copy -vf scale=-2:480</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>720p[mkv]</Name>
+    <OutExt>.mkv</OutExt>
+    <Command> -c:a aac -c:v libx264 -c:s copy -vf scale=-2:720</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>720p(x265)[mkv]</Name>
+    <OutExt>.mkv</OutExt>
+    <Command> -c:a aac -c:v libx265 -c:s copy -vf scale=-2:480</Command>
+  </RadioCommand>
+  <RadioCommand>
+    <Name>oldDevicesSupport[mp4]</Name>
+    <OutExt>.mp4</OutExt>
+    <Command> -c:a aac -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p -ac 2 -b:a 128k -movflags faststart </Command>
+  </RadioCommand>
+</ArrayOfRadioCommand>
