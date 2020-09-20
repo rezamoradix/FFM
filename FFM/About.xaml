@@ -1,0 +1,20 @@
+﻿<Window x:Class="FFM.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FFM"
+        mc:Ignorable="d" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="About" Height="165" Width="290">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" Text="Developer: rezamoradix" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock MouseUp="textBlock1_MouseUp" Cursor="Hand" x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,45,0,0" Text="Twitter" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF0039FF"/>
+        <TextBlock MouseUp="textBlock2_MouseUp" Cursor="Hand" x:Name="textBlock2" HorizontalAlignment="Left" Margin="66,45,0,0" Text="Github" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF0039FF" Width="37"/>
+        <Button Click="button_Click" x:Name="button" Content="Close" Margin="0,0,10,10" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="40"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,0,0,10" Text="2020 - version: 0.8" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>
