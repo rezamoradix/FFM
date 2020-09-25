@@ -142,7 +142,7 @@ namespace FFM
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     WindowStyle = ProcessWindowStyle.Hidden,
-                    CreateNoWindow = false
+                    CreateNoWindow = true
                 },
                 EnableRaisingEvents = true
             };
